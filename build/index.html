@@ -23,20 +23,37 @@
 	}
 	h1,h2,h3{line-height:1.2;font-weight:normal;}
 	p{margin: 0;padding: 0;}
+	.wrapper {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows:1fr 1fr 1fr;
+		grid-template-areas:".	.	."
+												".	me	."
+												".	.	.";
+	}
+
+	.body {
+		grid-area:me;
+	}
+
 </style>
 </head>
 
-<body class="node homepage">
+<body class="node homepage wrapper">
 	<article id="main" class="main">
-		<p>My name is Nathakit Sae-Tan.</p>
-		<p></br></p>
-		<p>I am a designer, coder, and entrepeneur. </p>
-		<p></br></p>
-		<p>I am a designer at <a href="https://pupil-labs.com">Pupil Labs</a>.</p>
-		<p></br></p>
-		<p>I am currently <a href="https://time.is/UTC+7">UTC+7</a>.</p><p>(Bangkok, Thailand).</p>
-		<p></br></p>
-		<p><a href="/cv">cv</a> <a href="https://github.com/nathakits">github</a> <a href="https://www.linkedin.com/in/nathakit-saetan-b4ab8379/">linkedin</a> <a href="mailto:nat@pupil-labs.com">email</a> </p>
+		<div class="wrapper">
+			<div class="body">
+				<p>My name is Nathakit Sae-Tan.</p>
+				<p></br></p>
+				<p>I am a designer, coder, and entrepeneur.</p>
+				<p></br></p>
+				<p>I am a designer at <a href="https://pupil-labs.com">Pupil Labs</a>.</p>
+				<p></br></p>
+				<p>I am currently <a href="https://time.is/UTC+7">UTC+7</a>.</p><p>(Bangkok, Thailand).</p>
+				<p></br></p>
+				<p><a href="https://github.com/nathakits">github</a> <a href="https://www.linkedin.com/in/nathakit-saetan-b4ab8379/">linkedin</a> <a href="mailto:nat@pupil-labs.com">email</a> </p>
+			</div>
+		</div>
   </article>
 </body>
 <footer>
@@ -48,7 +65,7 @@
 
 	  ga('create', 'UA-105674137-1', 'auto');
 	  ga('send', 'pageview');
-	  
+
 	</script>
 </footer>
 </html>
