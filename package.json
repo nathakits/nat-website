@@ -1,0 +1,24 @@
+{
+  "name": "nathakit",
+  "version": "0.2.0",
+  "description": "Nathakit Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathakits/nathakit.retro.git"
+  },
+  "keywords": [
+    "Nathakit",
+    "Sae-Tan",
+    "Personal",
+    "Portfolio"
+  ],
+  "author": "Nathakit Sae-Tan",
+  "bugs": {
+    "url": "https://github.com/nathakits/nathakit.retro/issues"
+  },
+  "homepage": "https://github.com/nathakits/nathakit.retro#readme"
+}
