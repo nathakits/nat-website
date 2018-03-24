@@ -4,6 +4,7 @@
   "description": "Nathakit Website",
   "main": "index.js",
   "scripts": {
+    "dev": "dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/nathakits/nathakit.retro/issues"
   },
-  "homepage": "https://github.com/nathakits/nathakit.retro#readme"
+  "homepage": "https://github.com/nathakits/nathakit.retro#readme",
+  "devDependencies": {
+    "nuxt": "^1.4.0"
+  }
 }
