@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +26,12 @@
   },
   "homepage": "https://github.com/nathakits/nathakit.retro#readme",
   "devDependencies": {
-    "nuxt": "^1.4.0"
+    "@nuxtjs/pwa": "^2.0.8",
+    "nuxt": "^1.4.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-progressive-image": "^2.4.4"
   }
 }
