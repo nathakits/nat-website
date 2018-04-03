@@ -1,0 +1,16 @@
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - '8'
+os:
+  - linux
+sudo: false
+install:
+  - npm install
+script:
+ npm generate
+cache:
+  directories:
+    - node_modules
