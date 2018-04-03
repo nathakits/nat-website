@@ -8,7 +8,6 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -33,5 +32,6 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-progressive-image": "^2.4.4"
-  }
+  },
+  "dependencies": {}
 }
