@@ -26,29 +26,10 @@ module.exports = {
   build: {
     vendor: [
       'vue-progressive-image',
-      'image-webpack-loader'
     ],
     extend (config, { isDev, isClient, isServer }) {
-      if (isDev || isClient || isServer) {
-        const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
-        urlLoader.options.limit = 2000 // 2kb
-      } else if {
-      loader: 'image-webpack-loader',
-      options: {
-        mozjpeg: {
-          progressive: true,
-          quality: 80,
-        },
-        optipng: {
-          enabled: false
-        },
-        pngquant: {
-          quality: '65-90',
-          speed: 1,
-          verbose: true
-        }
-      }
-      }
+      const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
+      urlLoader.options.limit = 2000 // 2kb
     }
   },
 
