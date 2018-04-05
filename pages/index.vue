@@ -34,6 +34,8 @@ div(id='home')
 					img.icon(src="~/assets/icons/github.svg")
 				a(href="https://www.linkedin.com/in/nathakit-saetan-b4ab8379/" title="Linkedin")
 					img.icon(src="~/assets/icons/linkedin.svg")
+				//- todo
+				//- add fb moonkin page
 
 			div
 				div(title="UTC+7").grid.alignItems-center
