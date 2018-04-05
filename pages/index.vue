@@ -7,12 +7,12 @@ div(id='home')
 				h1.logotype NST
 		div.content-container
 			div.grid.column.intro-container.bold
-				h1 Designer, 
-				h1 Coder,
+				h1 Designer 
+				h1 Coder
 				h1 Entrepeneur
 			div.grid.column.intro-container.bold
 				h1 Currently at 
-					a(href="https://pupil-labs.com") Pupil Labs.
+					a(href="https://pupil-labs.com") Pupil Labs
 
 
 				//- div.grid.column.intro-container.bold
