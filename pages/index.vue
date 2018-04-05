@@ -12,14 +12,8 @@ div(id='home')
 				h1 Entrepeneur
 			div.grid.column.intro-container.bold
 				h1 Currently at 
-					a(href="https://pupil-labs.com") Pupil Labs
+					a(href="https://pupil-labs.com").underline Pupil Labs
 
-
-				//- div.grid.column.intro-container.bold
-				//- 	h1 I am currently 
-				//- 		a(href="https://time.is/UTC+7") UTC+7. Bangkok, Thailand.
-
-				
 	div.bg-image
 		no-ssr
 			progressive-background(:src="require('~/assets/imgs/bucky_lv220.jpg')")
@@ -45,5 +39,6 @@ div(id='home')
 				div(title="UTC+7").grid.alignItems-center
 					h2 Made in 
 					i.material-icons wb_sunny
-					h2 Bangkok
+					a(href="https://time.is/UTC+7")
+						h2 Bangkok
 </template>
