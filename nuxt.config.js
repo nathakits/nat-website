@@ -9,8 +9,8 @@ module.exports = {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
-      { rel: 'styleshhet' href: 'https://fonts.googleapis.com/css?family=Open+Sans'}
-      { rel: 'stylesheet' href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
+      { rel: 'styleshhet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
     ]
   },
 
