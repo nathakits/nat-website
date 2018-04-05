@@ -36,13 +36,14 @@ div(id='home')
 					h3.email nat@pupil-labs.com
 
 			div.grid.alignItems-center
-				a(href="https://github.com/nathakits")
+				a(href="https://github.com/nathakits" title="Github")
 					img.icon(src="~/assets/icons/github.svg")
-				a(href="https://www.linkedin.com/in/nathakit-saetan-b4ab8379/")
+				a(href="https://www.linkedin.com/in/nathakit-saetan-b4ab8379/" title="Linkedin")
 					img.icon(src="~/assets/icons/linkedin.svg")
 
 			div
-				h2 Made in 
+				div(title="UTC+7").grid.alignItems-center
+					h2 Made in 
 					i.material-icons wb_sunny
-					| Thailand
+					h2 Bangkok
 </template>
