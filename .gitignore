@@ -2,3 +2,4 @@ node_modules/
 .nuxt
 sw.*
 dist/
+.DS_Store
