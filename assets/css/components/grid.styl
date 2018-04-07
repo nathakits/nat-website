@@ -13,6 +13,7 @@ header
 
 .grid
 	display flex
+	flex-wrap wrap
 
 .column
 	flex-direction column
@@ -35,9 +36,21 @@ header
 .header-container
 	padding 6rem 9rem 1rem 9rem 
 
+	@media $break-767
+		padding 2rem 3rem 0 2rem
+	
+	h1 
+		padding-bottom 0em
+
 .content-container
 	position relative
-	padding 6rem 9rem 0 9rem 
+	padding 6rem 9rem 0 9rem
+
+	@media $break-767
+		padding 2rem 3rem 0 2rem 
+
+		h1
+			font-size 1.8em
 
 	.grid:not(:last-child)
 		padding-bottom 30px
@@ -82,6 +95,10 @@ body
 .footer-container
 	padding 0 9rem 0 9rem
 	height 100%
+
+	@media $break-767
+		padding 0 2em 0 2em
+		flex-direction column
 	
 // header
 // 	position absolute
@@ -93,15 +110,25 @@ footer
 	background-color #333
 	bottom:0
 	width 100%
-	height 10vh
+	height 11vh
+
+	@media $break-767
+		height 40%
 
 	h2, h3, i
 		padding unset
 		color white
 
+	h2
+		font-size 1.4em
+
 	.material-icons
 		padding-left 10px
 		padding-right 10px
+
+	.justifyContent-between
+		justify-content space-around
+
 
 .underline
 	text-decoration underline
