@@ -45,7 +45,8 @@ module.exports = {
   },
 
   plugins: [
-    { src: "~/plugins/vue-progressive-image.js", ssr: false }
+    { src: "~/plugins/vue-progressive-image.js", ssr: false },
+    { src: "~/plugins/ga.js", ssr: false }
   ],
 
   generate: {
