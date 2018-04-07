@@ -1,22 +1,30 @@
 <template lang="pug">
-div.container
-    h1(v-if="error.statusCode === 404") Page not found
-    nuxt-link(to="/").underline Homepage
+div.grid.column.justifyContent-center.alignItems-center.container
+  h1(v-if="error.statusCode === 404") 404 not found
+  nuxt-link(to="/")
+    h2 Homepage
 </template>
 
 <script>
 export default {
   props: ['error'],
-  layout: 'error'
+  layout: 'empty'
 }
 </script>
 
-<style scoped>
-.container {
-  padding-top: 10%;
-  text-align: center;
-}
-h1 {
-  font-size: 20px;
-}
+<style lang="stylus" scoped>
+.container
+  width 100%
+  height 100vh
+  background-color #333
+  
+  h1, a
+    color white
+
+h2 
+  padding-bottom 5px 
+
+a
+  border-bottom 1px solid white
+
 </style>
