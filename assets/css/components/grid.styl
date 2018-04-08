@@ -2,10 +2,6 @@
 // 	width 100%
 // 	position absolute
 // 	z-index 10
-
-header
-	z-index 1
-	position relative
 	
 .row
 	display flex
@@ -34,6 +30,8 @@ header
 	align-items flex-end
 
 .header-container
+	position absolute
+	z-index 10
 	padding 6rem 9rem 1rem 9rem 
 
 	@media $break-767
@@ -44,13 +42,15 @@ header
 
 .content-container
 	position relative
+	z-index 10
+	top 20%
 	padding 6rem 9rem 0 9rem
 
 	@media $break-767
 		padding 2rem 3rem 0 2rem 
 
 		h1
-			font-size 1.8em
+			font-size 1.7em
 
 	.grid:not(:last-child)
 		padding-bottom 30px
@@ -58,28 +58,48 @@ header
 .intro-container
 	width 50%
 
+	@media $break-767
+		width 100%
+
 .bold
 	h1
 		font-weight 700
 		padding-bottom 0em
 
-body
-	margin 0
-
-.bg-image
+.bg-full-wh
 	position absolute
 	top 0
+	bottom 0
 	left 0
 	right 0
-	bottom 0
-	z-index 0
-	width 100vw
+	background-position center center
+	background-repeat no-repeat
+	background-color transparent 
+	background-size cover
+	backface-visibility hidden
+
+.bg-image
+	margin 0
+	display block
+	position relative
+	width 100%
 	height 100vh
+	top 0
+	bottom 0
+	left 0
+	right 0
+	background-position center center
+	background-repeat no-repeat
+	background-attachment fixed
+	background-size cover
 	filter grayscale(0.5)
 
 .logotype
 	font-weight 700
 	font-size 1.8em
+
+	@media $break-767
+		font-size 1.6em
 
 .logo-link
 	color #222
@@ -92,43 +112,20 @@ body
 	width 30px
 	height 30px
 
+	@media $break-767
+		width 24px
+		height 24px
+
 .footer-container
 	padding 0 9rem 0 9rem
 	height 100%
 
 	@media $break-767
-		padding 0 2em 0 2em
+		padding 1em 2em 1em 2em
 		flex-direction column
-	
-// header
-// 	position absolute
-// 	z-index 10
 
-footer
-	position absolute
-	z-index 10
-	background-color #333
-	bottom:0
-	width 100%
-	height 11vh
-
-	@media $break-767
-		height 40%
-
-	h2, h3, i
-		padding unset
-		color white
-
-	h2
-		font-size 1.4em
-
-	.material-icons
-		padding-left 10px
-		padding-right 10px
-
-	.justifyContent-between
-		justify-content space-around
-
+		>div:not(:last-child)
+			padding-bottom 1em
 
 .underline
 	text-decoration underline
