@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nuxt",
+    "devhost": "cross-env HOST=192.168.1.2 PORT=3000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -26,6 +27,7 @@
   "homepage": "https://github.com/nathakits/nathakit.retro#readme",
   "devDependencies": {
     "@nuxtjs/pwa": "^2.0.8",
+    "cross-env": "^5.1.4",
     "nuxt": "^1.4.0",
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",

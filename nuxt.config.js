@@ -21,7 +21,7 @@ module.exports = {
   dev: (process.env.NODE_ENV !== 'production'),
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://0.0.0.0:3000'
   },
 
   manifest: {
