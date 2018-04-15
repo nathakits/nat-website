@@ -6,18 +6,22 @@ main(id='home')
 			no-ssr
 				//- TODO
 				//- update background image with new render
-				//- remove rings and change sjy color
+				//- remove rings and change sky color
 				div.bg-full-wh
 					progressive-background(:src="require('~/assets/imgs/bucky_lv220.jpg')")
 
-		div.content-container
+		div.bg-content-container
 			div.grid.column.intro-container.bold
 				h1 Designer 
 				h1 Coder
 				h1 Entrepreneur
 			div.grid.column.intro-container.bold
 				h1 Currently at 
-					a(href="https://pupil-labs.com" title=" Accessible open source eye tracking platform").underline Pupil Labs
+					a(
+						href="https://pupil-labs.com"
+						title=" Accessible open source eye tracking platform"
+						)
+						|	pupil labs
 
 </template>
 
