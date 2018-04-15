@@ -1,6 +1,5 @@
 <template lang="pug">
   div
-    //- add navbar
     my-header
     <nuxt/>
     my-footer
