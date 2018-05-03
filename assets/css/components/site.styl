@@ -1,14 +1,15 @@
 body
 	margin 0
+	background-color rgba(0,0,0,0.9)
 
 footer
-	position absolute
+	position fixed
 	bottom 0
 	background-color #333
 	width 100%
 	height 10vh
 
-	h2, h3, i
+	h2, h3, h4, i
 		padding unset
 		color white
 
@@ -25,3 +26,11 @@ footer
 
 	.justifyContent-between
 		justify-content space-around
+
+.site-container
+	max-width 1000px
+	margin 0 auto
+	padding 0 40px
+
+	@media $break-767
+		// padding unset
