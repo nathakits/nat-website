@@ -4,8 +4,9 @@
   "description": "Nathakit Website",
   "main": "index.js",
   "scripts": {
+    "inet": "hostname -I",
     "dev": "nuxt",
-    "devhost": "cross-env HOST=192.168.1.2 PORT=3000 nuxt",
+    "devhost": "cross-env HOST=192.168.1.5 PORT=3000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
