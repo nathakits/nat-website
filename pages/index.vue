@@ -11,12 +11,12 @@ main(id='home')
 					progressive-background(:src="require('~/assets/imgs/bucky_lv220.jpg')")
 
 		div.bg-content-container
-			div.grid.column.intro-container.bold
+			div.grid.column.bold
 				h1 Designer 
 				h1 Coder
 				h1 Entrepreneur
 			div.grid.column.intro-container.bold
-				h1 Currently at 
+				h1  Currently at
 					a(
 						href="https://pupil-labs.com"
 						title=" Accessible open source eye tracking platform"

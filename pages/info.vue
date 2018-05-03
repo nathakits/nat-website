@@ -1,15 +1,28 @@
 <template lang="pug">
 	
-	main.content-container(id="info")
-		div 
-			p He is a visionary whose creativity and innovation spans multiple platforms. Utilizing many practices and disciplinaries to create something elegant and unique. 
+	main(id="info")
+		div.site-container
+			div.content-column.bio
+				h4
+					| He is a visionary whose creativity and innovation spans multiple platforms. 
+					| Utilizing many practices and disciplines to create something different and unique.
 
-			p His ethos is driven by his desire to learn and be uncomfortable. He continously seeks to apply his foundation in architecture and design to new mediums. The results of these labours often take unexpected forms, be it commercials, installations, short films, title sequences, motion graphics, software applications, web front-end development and user interface / user experience.
+				h4
+					| His ethos is driven by his desire to always seek and explore new opportunities, to never stop learning.
+					| Continously seeking to Utilize his foundation in architecture and design to new mediums.
 
-			p This fascination with multiple disciplinaries in design, computer and science informs in many types of interests ranging from automation, user centric design and hyper realistic graphics.
+				h4
+					| This passion involves with multiple disciplinaries in design, technology and science that informs many types of interests ranging from human computer interaction, hyper realistic graphics and front-end development.
+					| The results of these labours often take unexpected forms, be it commercials, title sequences, motion graphics, software, web development and user interface / user experience.
+			div.content-column.info
+				div.info-column(id="articles")
+					h3.info-header Articles
+					div.info-link-column
+						a(href="http://www.evolo.us/competition/return-to-nature-skyscraper/") eVolo - Babel Skyscraper
 
-			p work often centers around themes of identity, metaphysics, and the human connection to technology.
-			
-			p Available For Hire.
+				div.info-column(id="printPublications")
+					h3.info-header Print Publications
+					div.info-link-column
+						a(href="http://www.evolo.us/magazine/evolo-skyscrapers-3-limited-edition-book/") eVolo Skyscrapers 3
 
 </template>
