@@ -2,13 +2,13 @@
 footer
 	div.grid.justifyContent-between.footer-container.alignItems-center.icon-container
 		div.grid.alignItems-center
-			h2 Copyright
+			h4 Copyright
 			i.material-icons copyright
 
 		div
 			a.grid.alignItems-center(href="mailto:nat@pupil-labs.com" title="Email")
 				i.material-icons email
-				h3.email nat@pupil-labs.com
+				h4.email nat@pupil-labs.com
 
 		div.grid.alignItems-center.icon-container
 
@@ -29,8 +29,8 @@ footer
 
 		div
 			div(title="UTC+7").grid.alignItems-center
-				h2 Currently in 
+				h4 Currently in
 				i.material-icons wb_sunny
-				a(href="https://time.is/UTC+7").underline
-					h2 Bangkok	
+				a(href="https://time.is/UTC+7")
+					h4 Bangkok
 </template>
