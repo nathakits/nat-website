@@ -4,6 +4,9 @@
 <!-- [![Dependency Status](https://david-dm.org/nathakits/nathakit.retro.svg)](https://david-dm.org/nathakits/nathakit.retro) -->
 [![Dependency Status](https://david-dm.org/nathakits/nathakit.retro/dev-status.svg)](https://david-dm.org/nathakits/nathakit.retro#info=devDependencies)
 
+> Personal website. 
+> Collection of works and personal info
+
 ## Develop Locally
 
 ```
