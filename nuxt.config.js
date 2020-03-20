@@ -53,9 +53,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-      const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader');
-      urlLoader.options.limit = 2000; // 2kb
-    }
+    extend(config, ctx) { }
   }
 };
