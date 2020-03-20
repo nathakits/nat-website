@@ -33,8 +33,7 @@
     "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "vue-progressive-image": "^2.4.4"
+    "stylus-loader": "^3.0.2"
   },
   "dependencies": {}
 }
