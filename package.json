@@ -1,6 +1,6 @@
 {
   "name": "nathakit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Nathakit Website",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nathakits/nathakit.retro.git"
+    "url": "git+https://https://github.com/nathakits/nat-website.git"
   },
   "keywords": [
     "Nathakit",
@@ -23,9 +23,9 @@
   ],
   "author": "Nathakit Sae-Tan",
   "bugs": {
-    "url": "https://github.com/nathakits/nathakit.retro/issues"
+    "url": "https://https://github.com/nathakits/nat-website/issues"
   },
-  "homepage": "https://github.com/nathakits/nathakit.retro#readme",
+  "homepage": "https://https://github.com/nathakits/nat-website#readme",
   "devDependencies": {
     "@nuxtjs/pwa": "^2.0.8",
     "cross-env": "^5.1.4",
