@@ -1,29 +1,25 @@
 # Nathakit Sae-Tan
 
-![Build status](https://travis-ci.org/nathakits/nathakit.retro.png?branch=master)
-<!-- [![Dependency Status](https://david-dm.org/nathakits/nathakit.retro.svg)](https://david-dm.org/nathakits/nathakit.retro) -->
-[![Dependency Status](https://david-dm.org/nathakits/nathakit.retro/dev-status.svg)](https://david-dm.org/nathakits/nathakit.retro#info=devDependencies)
+![Build status](https://travis-ci.org/nathakits/nat-website.png?branch=master)
 
-> Personal website. 
+> Personal website.
 > Collection of works and personal info
 
-## Develop Locally
+## Build Setup
 
-```
-npm install -g vue-cli
-npm install # Or yarn install
+```bash
+# install dependencies
+$ npm install
 
 # serve with hot reload at localhost:3000
-npm run dev
-
-# serve with hot reload at x.x.x.x:3000
-# for desktop and mobile dev
-npm run devhost
+$ npm run dev
 
 # build for production and launch server
-npm run build
-npm start
+$ npm run build
+$ npm run start
 
 # generate static project
-npm run generate
+$ npm run generate
 ```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
