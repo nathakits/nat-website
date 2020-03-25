@@ -55,6 +55,7 @@ export default {
    ** Build configuration
    */
   build: {
+    quiet: false
     /*
      ** You can extend webpack config here
      */
