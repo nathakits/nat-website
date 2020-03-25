@@ -55,6 +55,12 @@ export default {
    ** Build configuration
    */
   build: {
+    filenames: {
+      font: ({ isDev }) =>
+        isDev ? "[path][name].[ext]" : "fonts/[name].[hash:7].[ext]",
+      video: ({ isDev }) =>
+        isDev ? "[path][name].[ext]" : "videos/[name].[hash:7].[ext]"
+    },
     quiet: false
     /*
      ** You can extend webpack config here
