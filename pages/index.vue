@@ -7,10 +7,11 @@
             div.grid.grid-cols-2.grid-flow-row.gap-4.h-full
               h1.text-3xl.font-bold Nat.
               div.grid.grid-cols-4.gap-4
-                span.col-span-1.text-right Projects
-                span.col-span-1.text-right Photo
-                span.col-span-1.text-right Blog
-                span.col-span-1.text-right Info
+                div.col-span-1.text-right(
+                  v-for="link in headLinks"
+                  :key="link"
+                )
+                  a(href="#" class="hover:underline hover:text-blue-500") {{ link }}
           div.calc-height.pb-8
             div.grid.grid-cols-8.grid-rows-2.gap-4.h-full
               div.row-span-2.col-span-4
@@ -22,12 +23,13 @@
                   div.grid-span-1
                     div.flex.justify-end.flex-col.h-full
                       div.py-4
-                        p Social
+                        p.font-bold Social
                       div.grid.grid-cols-4.gap-4
-                        span.col-span-1 Twiiter
-                        span.col-span-1 Github
-                        span.col-span-1 Dribbble
-                        span.col-span-1 LinkedIn
+                        div.col-span-1(
+                          v-for="link in socialLinks"
+                          :key="link"
+                        )
+                          a(href="#" class="hover:underline hover:text-blue-500") {{ link }}
               div.row-span-2.col-span-4
                 img.w-full.h-full.rounded.shadow-2xl(
                   src="https://tailwindcss.com/img/card-top.jpg"
@@ -50,6 +52,12 @@ console.log(
 export default {
   components: {
     Logo
+  },
+  data() {
+    return {
+      headLinks: ["Projects", "Photo", "Blog", "Info"],
+      socialLinks: ["Twitter", "Github", "Dribbble", "LinkedIn"]
+    };
   }
 };
 </script>
