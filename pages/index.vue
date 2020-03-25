@@ -13,28 +13,26 @@
                 )
                   a(href="#" class="hover:underline hover:text-blue-500") {{ link }}
           div.calc-height.pb-8
-            div.grid.grid-cols-8.grid-rows-2.gap-4.h-full
-              div.row-span-2.col-span-4
-                div.grid.grid-rows-2.h-full
-                  div.grid-span-1
-                    p Nathakit Sae-Tan
-                    h1.text-4xl.font-bold Product designer
-                    h1.text-4xl.font-bold Developer
-                  div.grid-span-1
-                    div.flex.justify-end.flex-col.h-full
-                      div.py-4
-                        p.font-bold Social
-                      div.grid.grid-cols-4.gap-4
-                        div.col-span-1(
-                          v-for="link in socialLinks"
-                          :key="link"
-                        )
-                          a(href="#" class="hover:underline hover:text-blue-500") {{ link }}
-              div.row-span-2.col-span-4
+            div.grid.grid-rows-3.gap-4.h-full(class="sm:grid-cols-none md:grid-cols-8")
+              div.row-span-1.col-span-4
+                p Nathakit Sae-Tan
+                h1.text-4xl.font-bold Product designer
+                h1.text-4xl.font-bold Developer
+              div.row-span-3.col-span-4
                 img.w-full.h-full.rounded.shadow-2xl(
                   src="https://tailwindcss.com/img/card-top.jpg"
                   alt="Sunset in the mountains"
                 )
+              div.row-span-2.col-span-4
+                div.flex.justify-end.flex-col.h-full
+                  div.py-4
+                    p.font-bold Social
+                  div.grid.grid-cols-4.gap-4
+                    div.col-span-1(
+                      v-for="link in socialLinks"
+                      :key="link"
+                    )
+                      a(href="#" class="hover:underline hover:text-blue-500") {{ link }}
 
     //- div.container.mx-auto
     //-   div.div.pt-6
