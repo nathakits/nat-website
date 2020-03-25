@@ -21,6 +21,7 @@ jobs:
       run: |
         npm install
         npm run generate
+        du -h dist
         npm run lint --if-present
       env:
         CI: true
