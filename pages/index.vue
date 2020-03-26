@@ -4,35 +4,45 @@
       div.container.mx-auto.h-full
         div.p-10.flex.flex-col.justify-between.h-full
           div
-            div.grid.grid-cols-2.grid-flow-row.gap-4.h-full
+            div.grid.gap-4.h-full.grid-cols-2
               h1.text-3xl.font-bold Nat.
-              div.grid.grid-cols-4.gap-4
-                div.col-span-1.text-right(
+              div.grid-cols-4.gap-4.hidden(class="sm:pt-2 sm:grid")
+                div.col-span-1(
+                  class="md:pt-0 sm:text-left md:text-right"
                   v-for="link in headLinks"
-                  :key="link"
+                  :key="link.name"
                 )
-                  a(href="#" class="hover:underline hover:text-blue-500") {{ link }}
-          div.calc-height.pb-8
+                  nuxt-link(class="hover:underline hover:text-blue-500" :to="link.path") {{ link.name }}
+              div.flex.items-center.justify-end(class="sm:pt-2 sm:hidden")
+                button.rounded-md.p-2.text-gray-500(class="hover:text-gray-700 hover:bg-gray-400 focus:outline-none")
+                  svg.h-6.w-6(stroke="currentColor" fill="none" viewBox="0 0 24 24")
+                    path(class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16")
+                    path(class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12")
+
+          div(class="sm:h-full sm:pb-0 md:pb-8").calc-height
             div.grid.grid-rows-3.gap-4.h-full(class="sm:grid-cols-none md:grid-cols-8")
               div.row-span-1.col-span-4
                 p Nathakit Sae-Tan
                 h1.text-4xl.font-bold Product designer
-                h1.text-4xl.font-bold Developer
+                h1.text-4xl.font-bold.pb-2 Developer
+                p.text-xs.text-gray-500 Currently @ Pupil Labs
               div.row-span-3.col-span-4
-                img.w-full.h-full.rounded.shadow-2xl(
-                  src="https://tailwindcss.com/img/card-top.jpg"
-                  alt="Sunset in the mountains"
-                )
-              div.row-span-2.col-span-4
+                div.bg-cover.bg-center.w-full.h-full.rounded.shadow-2xl(style="background-image: url('https://tailwindcss.com/img/card-top.jpg');")
+              div.col-span-4(class="sm:row-span-1 md:row-span-2")
                 div.flex.justify-end.flex-col.h-full
                   div.py-4
                     p.font-bold Social
-                  div.grid.grid-cols-4.gap-4
+                  div.grid.grid-cols-3.gap-4(class="sm:grid-cols-4")
                     div.col-span-1(
                       v-for="link in socialLinks"
-                      :key="link"
+                      :key="link.name"
                     )
-                      a(href="#" class="hover:underline hover:text-blue-500") {{ link }}
+                      a(
+                        class="hover:underline hover:text-blue-500"
+                        :href="link.path"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      ) {{ link.name }}
 
     //- div.container.mx-auto
     //-   div.div.pt-6
@@ -53,8 +63,20 @@ export default {
   },
   data() {
     return {
-      headLinks: ["Projects", "Photo", "Blog", "Info"],
-      socialLinks: ["Twitter", "Github", "Dribbble", "LinkedIn"]
+      headLinks: [
+        { name: "Projects", path: "/projects/" },
+        { name: "Photo", path: "/photo/" },
+        { name: "Blog", path: "/blog/" },
+        { name: "Info", path: "/info/" }
+      ],
+      socialLinks: [
+        { name: "Twitter", path: "https://twitter.com/nathakit_tan" },
+        { name: "Github", path: "https://github.com/nathakits" },
+        {
+          name: "LinkedIn",
+          path: "https://linkedin.com/in/nathakit-sae-tan-b4ab8379/"
+        }
+      ]
     };
   }
 };
@@ -67,7 +89,7 @@ export default {
 }
 */
 .calc-height {
-  height: calc(100vh - 250px);
+  height: 80%;
 }
 
 .flex-center {
@@ -97,5 +119,11 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+@media (max-width: 639px) {
+  .calc-height {
+    height: 85%;
+  }
 }
 </style>
