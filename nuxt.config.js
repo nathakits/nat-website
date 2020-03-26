@@ -30,6 +30,11 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
+
+  transition: {
+    name: "page",
+    mode: "out-in"
+  },
   /*
    ** Global CSS
    */
