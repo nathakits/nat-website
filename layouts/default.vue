@@ -1,18 +1,27 @@
-<template lang="pug">
-  div
-    my-header
-    <nuxt/>
-    my-footer
+<template>
+  <div>
+    <nuxt />
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-import MyFooter from '~/components/footer.vue'
-import MyHeader from '~/components/header.vue'
-
+import Footer from "~/components/Footer.vue";
 export default {
   components: {
-    MyFooter,
-    MyHeader
+    Footer
   }
-}
+};
 </script>
+
+<style>
+page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease-out;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+</style>

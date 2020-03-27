@@ -1,55 +1,75 @@
-module.exports = {
-
+export default {
+  mode: "spa",
+  /*
+   ** Headers of the page
+   */
   head: {
-    titleTemplate: 'Nathakit Sae-Tan',
+    title: process.env.npm_package_name || "",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Meta description' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || ""
+      }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
-      { rel: 'styleshhet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Inter&display=swap"
+      }
     ]
   },
+  /*
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#fff" },
 
-  modules: [
-		'@nuxtjs/pwa'
-	],
-
-  dev: (process.env.NODE_ENV !== 'production'),
-
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://0.0.0.0:3000'
+  transition: {
+    name: "page",
+    mode: "out-in"
   },
-
-  manifest: {
-    name: "Nathakit Sae-Tan",
-    description: "Nathakit Sae-Tan",
-    theme_color: "#38ea92",
-  },
-
-  css: [
-    '~/assets/css/main.styl'
+  /*
+   ** Global CSS
+   */
+  css: [],
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
+  /*
+   ** Nuxt.js dev-modules
+   */
+  buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    "@nuxtjs/eslint-module",
+    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    "@nuxtjs/tailwindcss"
   ],
-
+  /*
+   ** Nuxt.js modules
+   */
+  modules: ["@nuxtjs/pwa"],
+  /*
+   ** Build configuration
+   */
   build: {
-    vendor: [
-      'vue-progressive-image',
-    ],
-    extend (config, { isDev, isClient, isServer }) {
-      const urlLoader = config.module.rules.find((rule) => rule.loader === 'url-loader')
-      urlLoader.options.limit = 2000 // 2kb
-    }
-  },
-
-  plugins: [
-    { src: "~/plugins/vue-progressive-image.js", ssr: false },
-    { src: "~/plugins/ga.js", ssr: false }
-  ],
-
-  generate: {
-    dir: 'dist'
+    filenames: {
+      font: ({ isDev }) =>
+        isDev ? "[path][name].[ext]" : "fonts/[name].[hash:7].[ext]",
+      video: ({ isDev }) =>
+        isDev ? "[path][name].[ext]" : "videos/[name].[hash:7].[ext]"
+    },
+    quiet: false
+    /*
+     ** You can extend webpack config here
+     */
+    // extend() { }
   }
-}
+};
