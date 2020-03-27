@@ -11,7 +11,7 @@
               to="/"
             )
               i.material-icons.mr-4 arrow_back
-              span.text-sm Back home
+              span.text-sm(class="hover:underline") Back home
         h2.pb-4
           | My creativity and innovation spans multiple platforms.
           | Utilizing many practices and disciplines to create something different and unique.
