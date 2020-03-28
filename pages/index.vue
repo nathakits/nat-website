@@ -1,32 +1,16 @@
 <template lang="pug">
   div
-    div.bg-gray-200.h-screen
+    div.bg-gray-200.calc-height
       div.container.mx-auto.h-full
         div.p-10.flex.flex-col.justify-between.h-full
-          div
-            div.grid.gap-4.h-full.grid-cols-2
-              h1.text-3xl.font-bold Nat.
-              div.grid-cols-4.gap-4.grid(class="sm:pt-2")
-                div.col-span-4.flex.items-center.justify-end(
-                  class="md:pt-0 text-right"
-                  v-for="link in headLinks"
-                  :key="link.name"
-                )
-                  nuxt-link(class="hover:underline hover:text-blue-500" :to="link.path") {{ link.name }}
-              //- div.flex.items-center.justify-end(class="sm:pt-2 sm:hidden")
-              //-   button.rounded-md.p-2.text-gray-500(class="hover:text-gray-700 hover:bg-gray-400 focus:outline-none")
-              //-     svg.h-6.w-6(stroke="currentColor" fill="none" viewBox="0 0 24 24")
-              //-       path(class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16")
-              //-       path(class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12")
-
-          div(class="sm:h-full sm:pb-0 md:pb-8 sm:pt-0").calc-height.pt-4
-            div.grid.grid-rows-2.gap-4.h-full(class="sm:grid-cols-none md:grid-cols-8 sm:grid-rows-3")
+          div(class="sm:h-full sm:pb-0 md:pb-8 sm:pt-0").h-full.pt-4
+            div.grid.grid-rows-3.gap-4.h-full(class="sm:grid-cols-none md:grid-cols-8 sm:grid-rows-3")
               div.row-span-1.col-span-4
                 p Nathakit Sae-Tan
                 h1.text-3xl.font-bold(class="sm:text-4xl") Product designer
                 h1.text-3xl.font-bold.pb-2(class="sm:text-4xl") Developer
                 p.text-xs.text-gray-500 Currently @ Pupil Labs
-              div.row-span-3.col-span-4.hidden(class="sm:block")
+              div.row-span-2.col-span-4.block
                 //- div.bg-cover.bg-center.w-full.h-full.rounded.shadow-2xl(style="background-image: url('https://tailwindcss.com/img/card-top.jpg');")
               div.col-span-4(class="sm:row-span-1 md:row-span-2")
                 div.flex.justify-end.flex-col.h-full
@@ -60,12 +44,6 @@ export default {
   },
   data() {
     return {
-      headLinks: [
-        // { name: "Projects", path: "/projects/" },
-        // { name: "Photo", path: "/photo/" },
-        // { name: "Blog", path: "/blog/" },
-        { name: "Info", path: "/info/" }
-      ],
       socialLinks: [
         { name: "Twitter", path: "https://twitter.com/nathakit_tan" },
         { name: "Github", path: "https://github.com/nathakits" },
@@ -86,7 +64,7 @@ export default {
 }
 */
 .calc-height {
-  height: 80%;
+  height: calc(100vh - 93px);
 }
 
 .flex-center {
@@ -116,11 +94,5 @@ export default {
 
 .links {
   padding-top: 15px;
-}
-
-@media (max-width: 639px) {
-  .calc-height {
-    height: 85%;
-  }
 }
 </style>
