@@ -1,14 +1,18 @@
 <template>
   <div>
+    <Header></Header>
     <nuxt />
     <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Header from "~/components/Header.vue";
 import Footer from "~/components/Footer.vue";
+
 export default {
   components: {
+    Header,
     Footer
   }
 };
@@ -17,11 +21,10 @@ export default {
 <style>
 page-enter-active,
 .page-leave-active {
-  transition: all 0.2s ease-out;
+  transition: all 300ms ease-out;
 }
 .page-enter,
 .page-leave-active {
   opacity: 0;
-  transform-origin: 50% 50%;
 }
 </style>
