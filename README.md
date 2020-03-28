@@ -1,7 +1,5 @@
 # Nathakit Sae-Tan
 
-![Build status](https://travis-ci.org/nathakits/nat-website.png?branch=master)
-
 > Personal website.
 > Collection of works and personal info
 
