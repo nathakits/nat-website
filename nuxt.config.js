@@ -1,21 +1,27 @@
 export default {
-  mode: "spa",
   /*
    ** Headers of the page
    */
   head: {
     title: "Nathakit Sae-Tan",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    meta: [{
+        charset: "utf-8"
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
       {
         hid: "description",
         name: "description",
         content: "Nathakit Sae-Tan's personal website"
       }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    link: [{
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico"
+      },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -29,7 +35,9 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: {
+    color: "#fff"
+  },
 
   transition: {
     name: "page",
@@ -42,7 +50,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
+  plugins: [{
+    src: "~plugins/ga.js",
+    mode: "client"
+  }],
   /*
    ** Nuxt.js dev-modules
    */
@@ -61,9 +72,13 @@ export default {
    */
   build: {
     filenames: {
-      font: ({ isDev }) =>
+      font: ({
+          isDev
+        }) =>
         isDev ? "[path][name].[ext]" : "fonts/[name].[hash:7].[ext]",
-      video: ({ isDev }) =>
+      video: ({
+          isDev
+        }) =>
         isDev ? "[path][name].[ext]" : "videos/[name].[hash:7].[ext]"
     },
     quiet: false
