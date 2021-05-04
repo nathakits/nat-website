@@ -1,7 +1,4 @@
 export default {
-  /*
-   ** Headers of the page
-   */
   head: {
     title: "Nathakit Sae-Tan",
     meta: [{
@@ -32,44 +29,25 @@ export default {
       }
     ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
   loading: {
     color: "#fff"
   },
-
-  transition: {
+  pageTransition: {
     name: "page",
     mode: "out-in"
   },
-  /*
-   ** Global CSS
-   */
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [{
     src: "~plugins/ga.js",
     mode: "client"
   }],
-  /*
-   ** Nuxt.js dev-modules
-   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     "@nuxtjs/eslint-module",
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss"
   ],
-  /*
-   ** Nuxt.js modules
-   */
   modules: ["@nuxtjs/pwa"],
-  /*
-   ** Build configuration
-   */
   build: {
     filenames: {
       font: ({
@@ -81,7 +59,14 @@ export default {
         }) =>
         isDev ? "[path][name].[ext]" : "videos/[name].[hash:7].[ext]"
     },
-    quiet: false
+    quiet: false,
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-private-methods', {
+          loose: true
+        }]
+      ]
+    }
     /*
      ** You can extend webpack config here
      */

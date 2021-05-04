@@ -24,8 +24,7 @@
     "sourceType": "module"
   },
   "plugins": [
-    "vue",
-    ["@babel/plugin-proposal-private-methods", { "loose": true }]
+    "vue"
   ],
   "rules": {
     "no-console": 0,
