@@ -1,13 +1,14 @@
 export default {
-  mode: "spa",
-  /*
-   ** Headers of the page
-   */
   head: {
     title: "Nathakit Sae-Tan",
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        charset: "utf-8"
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
       {
         hid: "description",
         name: "description",
@@ -15,7 +16,11 @@ export default {
       }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico"
+      },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -26,39 +31,27 @@ export default {
       }
     ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: "#fff" },
-
-  transition: {
+  loading: {
+    color: "#fff"
+  },
+  pageTransition: {
     name: "page",
     mode: "out-in"
   },
-  /*
-   ** Global CSS
-   */
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [{ src: "~plugins/ga.js", mode: "client" }],
-  /*
-   ** Nuxt.js dev-modules
-   */
+  plugins: [
+    {
+      src: "~plugins/ga.js",
+      mode: "client"
+    }
+  ],
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     "@nuxtjs/eslint-module",
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss"
   ],
-  /*
-   ** Nuxt.js modules
-   */
   modules: ["@nuxtjs/pwa"],
-  /*
-   ** Build configuration
-   */
   build: {
     filenames: {
       font: ({ isDev }) =>
@@ -66,7 +59,17 @@ export default {
       video: ({ isDev }) =>
         isDev ? "[path][name].[ext]" : "videos/[name].[hash:7].[ext]"
     },
-    quiet: false
+    quiet: false,
+    babel: {
+      plugins: [
+        [
+          "@babel/plugin-proposal-private-methods",
+          {
+            loose: true
+          }
+        ]
+      ]
+    }
     /*
      ** You can extend webpack config here
      */
