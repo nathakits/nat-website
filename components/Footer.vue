@@ -21,7 +21,7 @@
               href="https://time.is/UTC+7"
               target="_blank"
               rel="noopener noreferrer"
-            ) Bangkok
+            ) Bangkok (UTC+7)
 
 </template>
 
