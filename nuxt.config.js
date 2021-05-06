@@ -1,7 +1,8 @@
 export default {
   head: {
     title: "Nathakit Sae-Tan",
-    meta: [{
+    meta: [
+      {
         charset: "utf-8"
       },
       {
@@ -14,7 +15,8 @@ export default {
         content: "Nathakit Sae-Tan's personal website"
       }
     ],
-    link: [{
+    link: [
+      {
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon.ico"
@@ -37,10 +39,12 @@ export default {
     mode: "out-in"
   },
   css: [],
-  plugins: [{
-    src: "~plugins/ga.js",
-    mode: "client"
-  }],
+  plugins: [
+    {
+      src: "~plugins/ga.js",
+      mode: "client"
+    }
+  ],
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     "@nuxtjs/eslint-module",
@@ -50,21 +54,20 @@ export default {
   modules: ["@nuxtjs/pwa"],
   build: {
     filenames: {
-      font: ({
-          isDev
-        }) =>
+      font: ({ isDev }) =>
         isDev ? "[path][name].[ext]" : "fonts/[name].[hash:7].[ext]",
-      video: ({
-          isDev
-        }) =>
+      video: ({ isDev }) =>
         isDev ? "[path][name].[ext]" : "videos/[name].[hash:7].[ext]"
     },
     quiet: false,
     babel: {
       plugins: [
-        ['@babel/plugin-proposal-private-methods', {
-          loose: true
-        }]
+        [
+          "@babel/plugin-proposal-private-methods",
+          {
+            loose: true
+          }
+        ]
       ]
     }
     /*
