@@ -1,6 +1,6 @@
 <template lang="pug">
 
-  div.calc-height
+  div
     div.container.mx-auto
       div.div.pt-6
         div.p-10
@@ -47,9 +47,3 @@
 
 
 </template>
-
-<style scoped>
-.calc-height {
-  height: calc(100vh - 93px);
-}
-</style>
