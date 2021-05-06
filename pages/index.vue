@@ -1,42 +1,36 @@
 <template lang="pug">
-  div
-    div.bg-gray-200.calc-height
-      div.container.mx-auto.h-full
-        div.p-10.flex.flex-col.justify-between.h-full
-          div(class="sm:h-full sm:pb-0 md:pb-8 sm:pt-0").h-full.pt-4
-            div.grid.grid-rows-3.gap-4.h-full(class="sm:grid-cols-none md:grid-cols-8 sm:grid-rows-3")
-              div.row-span-1.col-span-4
-                p Nathakit Sae-Tan
-                h1.text-3xl.font-bold(class="sm:text-4xl") Product designer
-                h1.text-3xl.font-bold.pb-2(class="sm:text-4xl") Developer
-                p.text-xs.text-gray-500 Currently @ Pupil Labs
-              div.row-span-2.col-span-4.block
-                //- div.bg-cover.bg-center.w-full.h-full.rounded.shadow-2xl(style="background-image: url('https://tailwindcss.com/img/card-top.jpg');")
-              div.col-span-4(class="sm:row-span-1 md:row-span-2")
-                div.flex.justify-end.flex-col.h-full
-                  div.py-4
-                    p.font-bold Social
-                  div.grid.grid-cols-3.gap-4(class="sm:grid-cols-4")
-                    div.col-span-1(
-                      v-for="link in socialLinks"
-                      :key="link.name"
-                    )
-                      a(
-                        class="hover:underline hover:text-blue-500"
-                        :href="link.path"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      ) {{ link.name }}
-
+div
+  div.bg-gray-200.calc-height
+    div.container.mx-auto.h-full
+      div.p-10.flex.flex-col.justify-between.h-full
+        div(class="sm:h-full sm:pb-0 md:pb-8 sm:pt-0").h-full.pt-4
+          div.grid.grid-rows-3.gap-4.h-full(class="sm:grid-cols-none md:grid-cols-8 sm:grid-rows-3")
+            div.row-span-1.col-span-4
+              p Nathakit Sae-Tan
+              h1.text-3xl.font-bold(class="sm:text-4xl") Product designer
+              h1.text-3xl.font-bold.pb-2(class="sm:text-4xl") Developer
+              p.text-xs.text-gray-500 Currently @ Pupil Labs
+            div.row-span-2.col-span-4.block
+              //- div.bg-cover.bg-center.w-full.h-full.rounded.shadow-2xl(style="background-image: url('https://tailwindcss.com/img/card-top.jpg');")
+            div.col-span-4(class="sm:row-span-1 md:row-span-2")
+              div.flex.justify-end.flex-col.h-full
+                div.py-4
+                  p.font-bold Social
+                div.grid.grid-cols-3.gap-4(class="sm:grid-cols-4")
+                  div.col-span-1(
+                    v-for="link in socialLinks"
+                    :key="link.name"
+                  )
+                    a(
+                      class="hover:underline hover:text-blue-500"
+                      :href="link.path"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    ) {{ link.name }}
 </template>
 
 <script>
 import Logo from "~/components/Logo.vue";
-
-console.log(
-  "%c Designed and made by Nathakit Sae-Tan ",
-  "background: #222; color: #fff; font-size: 15px; font-family: 'Inter'. sans-serif"
-);
 
 export default {
   components: {
@@ -53,6 +47,12 @@ export default {
         }
       ]
     };
+  },
+  mounted() {
+    console.log(
+      "%c Designed and made by Nathakit Sae-Tan ",
+      "background: #222; color: #fff; font-size: 15px; font-family: 'Inter'. sans-serif"
+    );
   }
 };
 </script>
