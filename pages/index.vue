@@ -1,17 +1,22 @@
 <template lang="pug">
 div
-  div.bg-gray-200.calc-height
+  div.bg-gray-200
     div.container.mx-auto.h-full
       div.p-10.flex.flex-col.justify-between.h-full
         div(class="sm:h-full sm:pb-0 md:pb-8 sm:pt-0").h-full.pt-4
           div.grid.grid-rows-3.gap-4.h-full(class="sm:grid-cols-none md:grid-cols-8 sm:grid-rows-3")
             div.row-span-1.col-span-4
-              p Nathakit Sae-Tan
-              h1.text-3xl.font-bold(class="sm:text-4xl") Product designer
-              h1.text-3xl.font-bold.pb-2(class="sm:text-4xl") Developer
-              p.text-xs.text-gray-500 Currently @ Pupil Labs
+              h1.text-5xl.font-bold.pb-2(class="sm:text-4xl") Product designer
+              h2.text-2xl.font-bold.pb-4.text-gray-700
+                div Crafting rich interfaces and experiences
+                div And helping the environment
+              div.text-sm
+                p.text-gray-600 Currently @ Pupil Labs 🕶
+                p.text-gray-600 Front-end developer 💻
+                p.text-gray-600 Environmentalist 🌏
+                p.text-gray-600 Rescue Diver 🌊
             div.row-span-2.col-span-4.block
-              //- div.bg-cover.bg-center.w-full.h-full.rounded.shadow-2xl(style="background-image: url('https://tailwindcss.com/img/card-top.jpg');")
+            //-   div.bg-cover.bg-center.w-full.h-full.rounded.shadow-2xl(style="background-image: url('https://tailwindcss.com/img/card-top.jpg');")
             div.col-span-4(class="sm:row-span-1 md:row-span-2")
               div.flex.justify-end.flex-col.h-full
                 div.py-4
@@ -63,10 +68,6 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.calc-height {
-  height: calc(100vh - 93px);
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
