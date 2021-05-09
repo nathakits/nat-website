@@ -35,7 +35,13 @@ div
               class="hover:underline"
             )
               | Pupil Labs GmbH
-            p 2018-Present
+            p.pb-2 2018-Present
+            ul.pb-2.list-inside.list-disc
+              li Contributed to overall strategy and decision-making about product direction
+              li Helped deliver and refine clear storytelling around product needs and opportunities
+              li Worked cross-functionally with product management, engineering, and design peers
+              li Created, collaborated, and iterated on flows, prototypes, and high-fidelity visuals
+              li Design and ship high quality product improvements
           div.pb-4
             p.font-bold Designer & Developer
             a.text-blue-500(
@@ -45,7 +51,14 @@ div
               class="hover:underline"
             )
               | Pupil Labs GmbH
-            p 2016-2018
+            p.pb-2 2016-2018
+            ul.pb-2.list-inside.list-disc
+              li Designer and developer for all of Pupil Labs online and offline content.
+              li Contributed to overall strategy and decision-making about product direction
+              li Front-end development of Pupil Labs websites using latest web technologies
+              li Maintaining Internal and external documentation
+              li Created 3D render of Pupil products
+              li Created 3D and 2D animations
           div
             p.font-bold Moonkin (Freelance)
             p.pb-2 2016-2019
