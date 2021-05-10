@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       headLinks: [
-        // { name: "Projects", path: "/projects/" },
+        { name: "Projects", path: "/projects/" },
         // { name: "Photo", path: "/photo/" },
         // { name: "Blog", path: "/blog/" },
         { name: "Info", path: "/info/" },
