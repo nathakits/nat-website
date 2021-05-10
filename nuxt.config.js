@@ -51,7 +51,7 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss"
   ],
-  modules: ["@nuxtjs/pwa"],
+  modules: ["@nuxtjs/pwa", "@nuxt/content"],
   build: {
     filenames: {
       font: ({ isDev }) =>
