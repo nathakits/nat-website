@@ -1,8 +1,8 @@
 <template lang="pug">
 
   div.container.mx-auto.h-full
-    div.div.pt-6
-      div.p-10
+    div.p-10
+      div.pt-6.border-t
         div.flex.flex-col(class="sm:grid sm:grid-cols-3 sm:gap-4 lg:grid-cols-8")
           div.pb-4(class="sm:col-span-1 lg:col-start-1 lg:col-end-3")
             p.font-bold.text-gray-800 Copyright
