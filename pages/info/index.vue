@@ -2,7 +2,7 @@
 
   div
     div.container.mx-auto
-      div.div.pt-6
+      div.pt-6
         div.p-10
           div.flex.justify-between.items-center.pb-10
             h1.text-4xl Info
