@@ -39,6 +39,7 @@ export default {
     mode: "out-in"
   },
   css: [],
+  components: true,
   plugins: [
     {
       src: "~plugins/ga.js",
@@ -52,6 +53,16 @@ export default {
     "@nuxtjs/tailwindcss"
   ],
   modules: ["@nuxtjs/pwa", "@nuxt/content"],
+  content: {
+    apiPrefix: "api"
+  },
+  hooks: {
+    "content:file:beforeInsert": document => {
+      if (document.extension === ".md") {
+        document.body = document.text;
+      }
+    }
+  },
   build: {
     filenames: {
       font: ({ isDev }) =>
