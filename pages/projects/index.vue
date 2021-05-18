@@ -21,7 +21,7 @@
       div.px-10.pb-10.pt-2.grid.grid-cols-2.gap-8
         template(v-for="post in projects")
           div
-            a.cursor-pointer(:href="post.link" target="_blank")
+            nuxt-link.cursor-pointer(:to="post.slug")
               img.object-cover.w-full.h-auto.rounded(
                 :src="require(`~/assets/images/projects/${post.hero_img}`)"
               )
