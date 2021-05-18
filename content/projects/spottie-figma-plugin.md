@@ -8,7 +8,6 @@ tag: plugin
 version: v1.2.0
 ---
 
-## Introduction
 My Figma plugin got published! This was my first public coding project that I actually completed and released to the public!
 
 The plugin is called [Spottie](https://github.com/nathakits/spottie-figma-plugin). I designed the UI in Figma and wrote all the code. The plugin uses Spotify API to get the new releases, album and track images which you can can insert directly into Figma. Similar to Unsplash.
@@ -17,7 +16,7 @@ Creating in open source can be very exciting. Knowing that people are actually u
 
 For most of my personal projects, I try to make it open source, so that means all the code and assets are available to the public. So anyone can see the code and help improve it or make feature requests or report bugs.
 
-### How it works
+## How it works
 Check out the walkthrough to see how the plugin works. Using this plugin cuts down time to mockup designs in Figma. Just search and insert!
 
 <!-- walkthrough video -->
