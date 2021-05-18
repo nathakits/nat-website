@@ -42,9 +42,12 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^6.2.2",
+    "fibers": "^5.0.0",
     "postcss": "^8.2.14",
     "prettier": "^1.19.1",
     "pug": "^3.0.2",
-    "pug-plain-loader": "^1.1.0"
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^10.2.0"
   }
 }
