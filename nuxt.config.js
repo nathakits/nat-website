@@ -54,14 +54,8 @@ export default {
   ],
   modules: ["@nuxtjs/pwa", "@nuxt/content"],
   content: {
-    apiPrefix: "api"
-  },
-  hooks: {
-    "content:file:beforeInsert": document => {
-      if (document.extension === ".md") {
-        document.body = document.text;
-      }
-    }
+    apiPrefix: "api",
+    liveEdit: false
   },
   build: {
     filenames: {
