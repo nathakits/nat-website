@@ -43,7 +43,7 @@
         div.rounded-md.bg-blue-200.w-min
           div.flex.items-center.justify-center.px-4.py-2.text-sm.font-bold.text-gray-800
             | Back
-      div
+      div.text-sm
         | Updated at {{ formatDate(page.updatedAt) }}
 </template>
 
