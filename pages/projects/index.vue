@@ -21,13 +21,14 @@
       div.px-10.pb-10.pt-2.grid.grid-cols-2.gap-8
         template(v-for="post in projects")
           div
-            nuxt-link.cursor-pointer(:to="post.slug")
+            nuxt-link(:to="post.path")
               img.object-cover.w-full.h-auto.rounded(
                 loading="lazy"
                 :src="require(`~/assets/images/projects/${post.hero_img}`)"
               )
             h2.font-bold.text-lg.pt-3 {{ post.title }}
             p.text-sm.pb-2 {{ post.subtitle }}
+            div {{ post }}
             //- p.text-sm.pb-2 {{ post.date }}
             div.rounded-md.bg-gray-200.w-min
               div.flex.items-center.justify-center.px-2.py-1.text-sm
@@ -36,9 +37,18 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const projects = await $content("projects", params.slug)
-      .only(["title", "subtitle", "hero_img", "slug", "link", "tag", "date"])
+  async asyncData({ $content }) {
+    const projects = await $content("projects")
+      .only([
+        "title",
+        "subtitle",
+        "hero_img",
+        "slug",
+        "link",
+        "tag",
+        "date",
+        "path"
+      ])
       .sortBy("date", "desc")
       .fetch();
     return {
