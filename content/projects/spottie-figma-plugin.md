@@ -199,4 +199,4 @@ This plugin is open source. Feel free to open issues/request features or pull re
 
 <div class="py-16 text-center">
 Thank you for reading 🙂
-</div>z
+</div>
