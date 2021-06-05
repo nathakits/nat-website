@@ -1,4 +1,5 @@
 export default {
+  target: "static",
   head: {
     title: "Nathakit Sae-Tan",
     meta: [
@@ -50,13 +51,24 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     "@nuxtjs/eslint-module",
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    // Doc: https://image.nuxtjs.org/
+    "@nuxt/image"
   ],
   modules: ["@nuxtjs/pwa", "@nuxt/content"],
   content: {
     apiPrefix: "api",
-    liveEdit: false
+    liveEdit: false,
+    markdown: {
+      prism: {
+        theme: "prism-themes/themes/prism-night-owl.css"
+      }
+    }
   },
+  // image: {
+  //   // Generate images to `/_nuxt/image/file.png`
+  //   staticFilename: "[publicPath]/images/[name]-[hash][ext]"
+  // },
   build: {
     filenames: {
       font: ({ isDev }) =>
