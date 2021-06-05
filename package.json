@@ -30,9 +30,11 @@
   "dependencies": {
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "nuxt": "^2.15.4"
+    "nuxt": "^2.15.4",
+    "prism-themes": "^1.7.0"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.4.13",
     "@nuxtjs/eslint-config": "^2.0.2",
     "@nuxtjs/eslint-module": "^1.2.0",
     "@nuxtjs/tailwindcss": "^4.1.1",
