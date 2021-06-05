@@ -23,12 +23,17 @@ export default {
         href: "/favicon.ico"
       },
       {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com"
+      },
+      {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/icon?family=Material+Icons"
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Inter&display=swap"
+        href:
+          "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       }
     ]
   },
