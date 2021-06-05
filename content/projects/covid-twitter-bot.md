@@ -2,7 +2,7 @@
 title: Covid-19 Vaccination Twitter Bot
 subtitle: Post percentage of fully vaccinated people with COVID-19 Vaccine in Thailand
 date: Wed Apr 21 2021 01:05:38 GMT+0700 (Indochina Time)
-hero_img: "covid-bot/file-cover.png"
+hero_img: "covid-bot/file-cover.jpg"
 link: https://twitter.com/THVaccinecount
 tech_stack: "JavaScript, Node.js"
 tag: bot
