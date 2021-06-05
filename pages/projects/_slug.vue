@@ -17,7 +17,7 @@
             a(:href="page.link" target="_blank" rel="noopener noreferrer")
               div.rounded-md.bg-blue-400
                 div.flex.items-center.justify-center.px-2.py-1.text-sm.font-bold.text-gray-800
-                  | Install in Figma
+                  | {{ actionText(page.tag) }}
         div.border-b.pt-6
     div.container.mx-auto
       div.px-10(
@@ -64,6 +64,16 @@ export default {
       };
       const d = new Date(date).toLocaleString("en-US", options);
       return d;
+    },
+    actionText(tag) {
+      switch (tag) {
+        case "plugin":
+          return `Install in Figma`;
+        case "bot":
+          return `Website`;
+        default:
+          break;
+      }
     }
   }
 };
