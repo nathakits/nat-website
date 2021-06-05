@@ -7,8 +7,9 @@
         div.flex.justify-between.items-center
           div.flex-initial
             h1.text-4xl.pb-2.font-bold {{ page.title }}
-            p.text-md.pb-2 {{ page.subtitle }}
-            div.text-sm
+            p.text-md.pb-2.font-medium {{ page.subtitle }}
+            p.text-sm.pb-2(v-if="page.tech_stack") {{ page.tech_stack }}
+            div.text-xs.text-gray-500
               span.date {{ formatDate(page.date) }}
               //- todo: link back to projects with plugin filter
               nuxt-link(to="/projects/")
