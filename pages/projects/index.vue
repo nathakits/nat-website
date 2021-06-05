@@ -28,7 +28,6 @@
               )
             h2.font-bold.text-lg.pt-3 {{ post.title }}
             p.text-sm.pb-2 {{ post.subtitle }}
-            div {{ post }}
             //- p.text-sm.pb-2 {{ post.date }}
             div.rounded-md.bg-gray-200.w-min
               div.flex.items-center.justify-center.px-2.py-1.text-sm
