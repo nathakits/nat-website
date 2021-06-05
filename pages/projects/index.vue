@@ -23,6 +23,7 @@
           div
             nuxt-link.cursor-pointer(:to="post.slug")
               img.object-cover.w-full.h-auto.rounded(
+                loading="lazy"
                 :src="require(`~/assets/images/projects/${post.hero_img}`)"
               )
             h2.font-bold.text-lg.pt-3 {{ post.title }}
