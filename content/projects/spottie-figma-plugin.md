@@ -19,7 +19,7 @@ Spottie uses Spotify API to get new release, album and track images which you ca
 Check out the walkthrough to see how the plugin works.
 
 <video width="100%" controls>
-  <source src="spottie/walkthrough.mp4" type="video/mp4">
+  <source src="/projects/spottie/walkthrough.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
@@ -101,7 +101,7 @@ At this point, instead of designing the high fidelity design right away, I start
 
 <figure>
   <nuxt-picture
-    src="projects/spottie/lofi-ui.jpg"
+    src="/projects/spottie/lofi-ui.jpg"
     format="webp"
     sizes="xs:400px md:800px lg:1640"
   >
@@ -116,7 +116,7 @@ With the prototype working, it's time to fully flesh out the rest of the design.
 
 <figure>
   <nuxt-picture
-    src="projects/spottie/hifi-ui.png"
+    src="/projects/spottie/hifi-ui.png"
     format="webp"
     sizes="xs:400px md:800px lg:1640"
   >
@@ -150,7 +150,7 @@ The plugin is ready to be published, but before I can do that I need to prepare 
 
 <figure>
   <nuxt-picture
-    src="projects/spottie/draft-logo-designs.png"
+    src="/projects/spottie/draft-logo-designs.png"
     format="webp"
     sizes="xs:400px md:800px lg:1640"
   >
@@ -161,7 +161,7 @@ While looking at all the other plugin logos, I decided that the logotype should 
 
 <figure>
   <nuxt-picture
-    src="projects/spottie/final-logo.png"
+    src="/projects/spottie/final-logo.png"
     format="webp"
     sizes="xs:400px md:800px lg:1640"
   >
@@ -182,7 +182,7 @@ Spotify provides a dashboard for developers to create and manage integrations. S
 
 <figure>
   <nuxt-picture
-    src="projects/spottie/spotify-dashboard.png"
+    src="/projects/spottie/spotify-dashboard.png"
     format="webp"
     sizes="xs:400px md:800px lg:1640"
   >
@@ -199,4 +199,4 @@ This plugin is open source. Feel free to open issues/request features or pull re
 
 <div class="py-16 text-center">
 Thank you for reading 🙂
-</div>
+</div>z
