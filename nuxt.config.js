@@ -50,7 +50,8 @@ export default {
     {
       src: "~plugins/ga.js",
       mode: "client"
-    }
+    },
+    "~/plugins/medium-zoom"
   ],
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module

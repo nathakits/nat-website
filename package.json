@@ -30,11 +30,12 @@
   "dependencies": {
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "medium-zoom": "^1.0.6",
     "nuxt": "^2.15.4",
     "prism-themes": "^1.7.0"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.4.13",
+    "@nuxt/image": "^0.4.14",
     "@nuxtjs/eslint-config": "^2.0.2",
     "@nuxtjs/eslint-module": "^1.2.0",
     "@nuxtjs/tailwindcss": "^4.1.1",
@@ -45,7 +46,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^6.2.2",
     "fibers": "^5.0.0",
-    "postcss": "^8.2.14",
+    "postcss": "^8.3.4",
     "prettier": "^1.19.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
