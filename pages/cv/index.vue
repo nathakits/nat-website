@@ -21,9 +21,11 @@ div
             p
               | Crafting interfaces and user experiences for eye tracking.
             p
-              | I come from a architectural design background with an emphasis on complex problem solving in different scales.
+              | I come from an architectural design background with an emphasis on complex problem solving in different scales.
             p
               | Skills: Product design, Motion graphics, UI/UX, Front-End development
+            p
+              | Tech Stack: Javascript / Vue.js / Node.js
         div.pb-8(id="experience")
           h2.font-bold.text-2xl.pb-4 Experience
           div.pb-4
