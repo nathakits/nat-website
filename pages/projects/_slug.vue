@@ -14,10 +14,10 @@
               //- todo: link back to projects with plugin filter
               nuxt-link(to="/projects/")
                 span.text-blue-500 {{ capitalize(page.tag) }}
-          div.flex-initial
+          div.flex-initiall.pt-3(class="lg:pt-0")
             a(:href="page.link" target="_blank" rel="noopener noreferrer")
               div.rounded-md.bg-blue-400
-                div.flex.items-center.justify-center.px-2.py-1.text-sm.font-bold.text-gray-800
+                div.flex.items-center.justify-center.px-2.py-1.text-sm.font-bold.text-gray-800.text-center
                   | {{ actionText(page.tag) }}
         div.border-b.pt-6
     div.container.mx-auto
@@ -36,15 +36,19 @@
           class="2xl:px-10"
         )
           nuxt-content(:document="page")
-    div.container.mx-auto.flex.justify-between.items-center(
-      class="sm:px-16 md:px-24 lg:px-60 xl:px-80"
-    )
-      nuxt-link(to="/projects/")
-        div.rounded-md.bg-blue-200.w-min
-          div.flex.items-center.justify-center.px-4.py-2.text-sm.font-bold.text-gray-800
-            | Back
-      div.text-sm
-        | Updated at {{ formatDate(page.updatedAt) }}
+    div.container.mx-auto
+      div.px-10(
+        class="sm:px-16 md:px-24 lg:px-60 xl:px-80"
+      )
+        div.flex.justify-between.items-center.px-0(
+          class="2xl:px-10"
+        )
+          nuxt-link(to="/projects/")
+            div.rounded-md.bg-blue-200.w-min
+              div.flex.items-center.justify-center.px-4.py-2.text-sm.font-bold.text-gray-800
+                | Back
+          div.text-sm
+            | Updated at {{ formatDate(page.updatedAt) }}
 </template>
 
 <script>
