@@ -37,13 +37,6 @@ export default {
       }
     ]
   },
-  loading: {
-    color: "#fff"
-  },
-  pageTransition: {
-    name: "page",
-    mode: "out-in"
-  },
   css: [],
   components: true,
   plugins: [
