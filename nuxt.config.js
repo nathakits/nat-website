@@ -37,13 +37,6 @@ export default {
       }
     ]
   },
-  loading: {
-    color: "#fff"
-  },
-  pageTransition: {
-    name: "page",
-    mode: "out-in"
-  },
   css: [],
   components: true,
   plugins: [
@@ -62,6 +55,13 @@ export default {
     "@nuxt/image"
   ],
   modules: ["@nuxtjs/pwa", "@nuxt/content"],
+  tailwindcss: {
+    config: {
+      purge: {
+        content: ["content/**/**.md"]
+      }
+    }
+  },
   content: {
     apiPrefix: "api",
     liveEdit: false,
@@ -71,10 +71,6 @@ export default {
       }
     }
   },
-  // image: {
-  //   // Generate images to `/_nuxt/image/file.png`
-  //   staticFilename: "[publicPath]/images/[name]-[hash][ext]"
-  // },
   build: {
     filenames: {
       font: ({ isDev }) =>
